@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* background: #03111f; */
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.page-bg {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #03111f, #071d31, #041322);
+  padding: 24px;
+}
+
+.primary-btn {
+  background: #1d6fff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.primary-btn:hover {
+  background: #3b82ff;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid #2a4867;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.full-btn {
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  background: rgba(8, 22, 39, 0.95);
+  border: 1px solid rgba(76, 114, 163, 0.2);
+  border-radius: 16px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-box {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1d6fff, #4f9cff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo-title {
+  font-size: 20px;
+}
+
+.logo-subtitle {
+  font-size: 12px;
+  color: #9fb3c9;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 24px;
+  color: #c8d6e5;
+}
+
+.navbar-links a:hover {
+  color: white;
+}
+
+.navbar-user {
+  background: #10243c;
+  padding: 10px 16px;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.hero-text p {
+  color: #b2c3d6;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero-image-box img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.search-card {
+  background: rgba(8, 22, 39, 0.95);
+  border: 1px solid rgba(76, 114, 163, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #c1d2e4;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+  background: #081828;
+  color: white;
+  border: 1px solid #1d3550;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.route-section h3 {
+  margin-bottom: 16px;
+}
+
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.route-box {
+  background: rgba(8, 22, 39, 0.95);
+  border: 1px solid rgba(76, 114, 163, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.trains-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+}
+
+.filters-panel,
+.train-card {
+  background: rgba(8, 22, 39, 0.95);
+  border: 1px solid rgba(76, 114, 163, 0.2);
+  border-radius: 20px;
+}
+
+.filters-panel {
+  padding: 24px;
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.filter-block {
+  margin-top: 20px;
+}
+
+.filter-block label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.filter-block p {
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+input[type="checkbox"] {
+  accent-color: #1d6fff;
+}
+.section-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.sort-select {
+  background: #081828;
+  color: white;
+  border: 1px solid #1d3550;
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.train-card {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.train-card-left h3 {
+  margin-bottom: 8px;
+}
+
+.train-card-left p {
+  color: #a6bdd3;
+}
+
+.time-row {
+  display: flex;
+  gap: 40px;
+  margin-top: 18px;
+}
+
+.time-row span {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.time-row small {
+  color: #8fa8c0;
+}
+
+.train-card-right {
+  text-align: right;
+}
+
+.rating {
+  margin-bottom: 16px;
+  color: #81e6a1;
+  font-weight: bold;
+}
+
+.seat-page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.train-info-box,
+.bottom-summary {
+  background: rgba(8, 22, 39, 0.95);
+  border: 1px solid rgba(76, 114, 163, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.coach-tabs {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.tab-btn {
+  background: #10243c;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: #1d6fff;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.seat-box {
+  height: 60px;
+  background: #0d2236;
+  border: 1px solid #23425f;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.seat-box.selected {
+  background: #1d6fff;
+}
+
+.bottom-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.continue-btn {
+  width: 100%;
+}
+
+.passenger-page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.booking-top-box,
+.passenger-card,
+.contact-box {
+  background: rgba(8, 22, 39, 0.95);
+  border: 1px solid rgba(76, 114, 163, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.passenger-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.passenger-grid input,
+.passenger-grid select {
+  background: #081828;
+  color: white;
+  border: 1px solid #1d3550;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.passenger-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
